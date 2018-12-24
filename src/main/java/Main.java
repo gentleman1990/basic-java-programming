@@ -3,9 +3,9 @@ public class Main {
         System.out.println("Hello World!");
         Airplane airplane = new Airplane();
 
-        Airplane airplaneWithValues = new Airplane((byte) 0x04, (short) 2, 115000, 7700, 16.08F, 54, '\u0043', true, "Airbus_A300");
+        Airplane airplaneWithValues = new Airplane((byte) 0x04, (short) 2, 115000, 7700, 16.08F, 54, '\u0043', true, "Airbus", "A300");
 
-        System.out.println(airplane.getName());
-        System.out.println(airplaneWithValues.getName());
+        System.out.println(airplane.getModel());
+        System.out.println(airplaneWithValues.getModel());
     }
 }

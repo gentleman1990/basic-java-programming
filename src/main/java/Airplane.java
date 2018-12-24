@@ -9,41 +9,28 @@ public class Airplane {
     private long  range; //64bit | range: -2^63 to 2^63 - 1
     private float height; //32bit | single-precision, 754 floating point
     private double width; //64bit | double-precision, 754 floating point
-    private char model; // single 16-bit Unicode character
+    private char symbol; // single 16-bit Unicode character
     private boolean isInUse; // only true or false
 
-    private String name;
+    private String model;
+    private String brand;
     private BigInteger bigInteger; // sky is the limit - for mathematical purposes
     private BigDecimal bigDecimal; // sky is the limit - for mathematical purposes
-
 
     public Airplane() {
     }
 
-    public Airplane(byte numberOfWheel, short numberOfWings, int weight, long range, float height, double width, char model, boolean isInUse, String name, BigInteger bigInteger, BigDecimal bigDecimal) {
+    public Airplane(byte numberOfWheel, short numberOfWings, int weight, long range, float height, double width, char symbol, boolean isInUse, String model, String brand) {
         this.numberOfWheel = numberOfWheel;
         this.numberOfWings = numberOfWings;
         this.weight = weight;
         this.range = range;
         this.height = height;
         this.width = width;
-        this.model = model;
+        this.symbol = symbol;
         this.isInUse = isInUse;
-        this.name = name;
-        this.bigInteger = bigInteger;
-        this.bigDecimal = bigDecimal;
-    }
-
-    public Airplane(byte numberOfWheel, short numberOfWings, int weight, long range, float height, double width, char model, boolean isInUse, String name) {
-        this.numberOfWheel = numberOfWheel;
-        this.numberOfWings = numberOfWings;
-        this.weight = weight;
-        this.range = range;
-        this.height = height;
-        this.width = width;
         this.model = model;
-        this.isInUse = isInUse;
-        this.name = name;
+        this.brand = brand;
     }
 
     public byte getNumberOfWheel() {
@@ -94,12 +81,12 @@ public class Airplane {
         this.width = width;
     }
 
-    public char getModel() {
-        return model;
+    public char getSymbol() {
+        return symbol;
     }
 
-    public void setModel(char model) {
-        this.model = model;
+    public void setSymbol(char symbol) {
+        this.symbol = symbol;
     }
 
     public boolean isInUse() {
@@ -110,11 +97,35 @@ public class Airplane {
         isInUse = inUse;
     }
 
-    public String getName() {
-        return name;
+    public String getModel() {
+        return model;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public BigInteger getBigInteger() {
+        return bigInteger;
+    }
+
+    public void setBigInteger(BigInteger bigInteger) {
+        this.bigInteger = bigInteger;
+    }
+
+    public BigDecimal getBigDecimal() {
+        return bigDecimal;
+    }
+
+    public void setBigDecimal(BigDecimal bigDecimal) {
+        this.bigDecimal = bigDecimal;
     }
 }
