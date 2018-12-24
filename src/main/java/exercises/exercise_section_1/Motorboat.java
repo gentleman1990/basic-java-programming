@@ -1,4 +1,4 @@
-package exercises;
+package exercises.exercise_section_1;
 
 public class Motorboat {
     //todo There should be fields like model, brand, vmax,
