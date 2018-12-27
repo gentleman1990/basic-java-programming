@@ -1,6 +1,6 @@
 import sections.section_1.Airplane;
 
-public class Main {
+public class Main_section_1 {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         Airplane airplane = new Airplane();

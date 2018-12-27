@@ -1,8 +1,8 @@
-package sections.section_2;
+package sections.section_2.vehicles;
 
 import sections.section_2.abstracts.Vehicle;
 
-public class Ariplane extends Vehicle {
+public class Airplane extends Vehicle {
 
     private int numberOfWings;
 
@@ -10,7 +10,7 @@ public class Ariplane extends Vehicle {
     private String brand;
     private boolean isStillProduced;
 
-    public Ariplane(double height, double width, double length, double weight, int numberOfWheel, int numberOfWings, String model, String brand, boolean isStillProduced) {
+    public Airplane(double height, double width, double length, double weight, int numberOfWheel, int numberOfWings, String model, String brand, boolean isStillProduced) {
         super(height, width, length, weight, numberOfWheel);
         this.numberOfWings = numberOfWings;
         this.model = model;
@@ -32,5 +32,9 @@ public class Ariplane extends Vehicle {
 
     public boolean isStillProduced() {
         return isStillProduced;
+    }
+
+    public boolean isUseful() {
+        return true;
     }
 }

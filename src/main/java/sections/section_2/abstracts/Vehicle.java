@@ -1,7 +1,7 @@
 package sections.section_2.abstracts;
 
 public abstract class Vehicle {
-    double height;
+    private double height;
     private double width;
     private double length;
     private double weight;
@@ -15,23 +15,25 @@ public abstract class Vehicle {
         this.numberOfWheel = numberOfWheel;
     }
 
-    double getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    double getWidth() {
+    public double getWidth() {
         return width;
     }
 
-    double getLength() {
+    public double getLength() {
         return length;
     }
 
-    double getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    double getNumberOfWheel() {
+    public double getNumberOfWheel() {
         return numberOfWheel;
     }
+
+    public abstract boolean isUseful();
 }
