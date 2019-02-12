@@ -17,15 +17,15 @@ public class SimpleClass {
 
     //Methods void type declaration
     public void simplePublicMethod() {
-        System.out.println("test");
+        System.out.println("simplePublicMethod");
     }
 
     private void simplePrivateMethod() {
-        System.out.println("test2");
+        System.out.println("simplePrivateMethod");
     }
 
     protected void simpleProtectedMethod() {
-        System.out.println("test3");
+        System.out.println("simpleProtectedMethod");
     }
 
     //Methods specific type
@@ -38,4 +38,7 @@ public class SimpleClass {
         return simpleStringField;
     }
 
+    public void innerMethod(){
+        simplePrivateMethod();
+    }
 }
