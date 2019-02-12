@@ -37,5 +37,4 @@ public class SimpleClass {
     protected String simpleReturnStringTypeMethod(){
         return simpleStringField;
     }
-
 }
