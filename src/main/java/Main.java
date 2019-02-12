@@ -1,5 +1,14 @@
+import test.SimpleClass;
+
 public class Main {
     public static void main(String[] args) {
+
+        System.out.println("Hello World!");
+        SimpleClass simpleClass = new SimpleClass(2);
+
+        // public method
+        simpleClass.simplePublicMethod();
+        System.out.println(simpleClass.simpleReturnTypeMethod());
 //        //FOR I LOOP
 //        for (int i = 0; i < 10; i++) {
 //            System.out.println(i);
