@@ -3,7 +3,7 @@ import test.SimpleClass;
 public class MainPart1 {
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
+        System.out.println("config!");
         SimpleClass simpleClass = new SimpleClass(2);
 
         // public method
